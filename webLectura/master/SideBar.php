@@ -2,7 +2,7 @@
 
 <aside class="app-sidebar" id="sidebar">
     <div class="sidebar-header">
-        <a class="sidebar-brand" href="#"><span class="highlight">Flat v3</span> Admin</a>
+        <a class="sidebar-brand" href="#"><span class="highlight">Lectura v3</span> Admin</a>
         <button type="button" class="sidebar-toggle">
             <i class="fa fa-times"></i>
         </button>
@@ -12,11 +12,11 @@
         <ul class="sidebar-nav">
             
             <li class="active">
-                <a href="./index.html">
+                <a href="index.php">
                     <div class="icon">
                         <i class="fa fa-tasks" aria-hidden="true"></i>
                     </div>
-                    <div class="title">Dashboard</div>
+                    <div class="title">Inicio</div>
                 </a>
             </li>
             
@@ -25,7 +25,7 @@
                     <div class="icon">
                         <i class="fa fa-comments" aria-hidden="true"></i>
                     </div>
-                    <div class="title">Messaging</div>
+                    <div class="title">Redactar</div>
                 </a>
             </li>
             
@@ -34,7 +34,7 @@
                     <div class="icon">
                         <i class="fa fa-comments" aria-hidden="true"></i>
                     </div>
-                    <div class="title">Pedidos</div>
+                    <div class="title">Archivos</div>
                 </a>
             </li>
             
@@ -43,7 +43,7 @@
                     <div class="icon">
                         <i class="fa fa-comments" aria-hidden="true"></i>
                     </div>
-                    <div class="title">Reportes</div>
+                    <div class="title">Biblioteca</div>
                 </a>
             </li>
             
