@@ -1,4 +1,4 @@
-<div class="btn-floating" id="help-actions">
+<!--<div class="btn-floating" id="help-actions">
     <div class="btn-bg"></div>
     <button type="button" class="btn btn-default btn-toggle" data-toggle="toggle" data-target="#help-actions">
         <i class="icon fa fa-plus"></i>
@@ -12,7 +12,7 @@
             <li><a href="#">About</a></li>
         </ul>
     </div>
-</div>
+</div>-->
 
 <footer class="app-footer"> 
     <div class="row">

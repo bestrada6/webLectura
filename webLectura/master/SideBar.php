@@ -14,34 +14,34 @@
             <li class="active">
                 <a href="index.php">
                     <div class="icon">
-                        <i class="fa fa-tasks" aria-hidden="true"></i>
+                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
                     </div>
                     <div class="title">Inicio</div>
                 </a>
             </li>
             
             <li class="@@menu.messaging">
-                <a href="#">
+                <a href="usuarios.php">
                     <div class="icon">
-                        <i class="fa fa-comments" aria-hidden="true"></i>
+                        <i class="fa fa-users" aria-hidden="true"></i>
                     </div>
-                    <div class="title">Redactar</div>
+                    <div class="title">Usuarios</div>
                 </a>
             </li>
             
             <li >
-                <a href="#">
+                <a href="grupos.php">
                     <div class="icon">
-                        <i class="fa fa-comments" aria-hidden="true"></i>
+                        <i class="fa fa-server" aria-hidden="true"></i>
                     </div>
-                    <div class="title">Archivos</div>
+                    <div class="title">Grupos</div>
                 </a>
             </li>
             
             <li >
-                <a href="#">
+                <a href="libros.php">
                     <div class="icon">
-                        <i class="fa fa-comments" aria-hidden="true"></i>
+                        <i class="fa fa-book" aria-hidden="true"></i>
                     </div>
                     <div class="title">Biblioteca</div>
                 </a>
