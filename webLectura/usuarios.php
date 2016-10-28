@@ -13,6 +13,17 @@
         <link rel="stylesheet" type="text/css" href="assets/css/theme/blue.css">
         <link rel="stylesheet" type="text/css" href="assets/css/theme/red.css">
         <link rel="stylesheet" type="text/css" href="assets/css/theme/yellow.css">
+        
+        <script type="text/javascript" src="assets/js/vendor.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        
+        <style>
+          .thumb {
+            height: 300px;
+            border: 1px solid #000;
+            margin: 10px 5px 0 0;
+          }
+        </style>
 
     </head>
     <body>
@@ -256,7 +267,61 @@
                                     <h4 class="modal-title">Modal title</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl</p>
+
+                                    <div class="row">
+
+                                        <div class="section">
+                                            <div class="section-title">Information Personal</div>
+                                            <div class="section-body">
+
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Nombres:</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Apellidos:</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control" placeholder="">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Foto:</label>
+                                                    <div class="col-md-9">
+                                                        <input type="file" id="files" name="files[]" class="form-control" placeholder="">
+                                                        <output id="list"></output>
+                                                    </div>
+                                                </div>
+ 
+            
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="section">
+                                            <div class="section-title">Information de Acceso</div>
+                                            <div class="section-body">
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Usuario:</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Contraseña:</label>
+                                                    <div class="col-md-9">
+                                                        <input type="password" class="form-control" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+
+                                    </div>
+
+
+
+
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
@@ -292,10 +357,40 @@
 
 
 
+        <script>
+              function archivo(evt) {
+                  var files = evt.target.files; // FileList object
+             
+                  // Obtenemos la imagen del campo "file".
+                  for (var i = 0, f; f = files[i]; i++) {
+                    //Solo admitimos imágenes.
+                    if (!f.type.match('image.*')) {
+                        continue;
+                    }
+             
+                    var reader = new FileReader();
+             
+                    reader.onload = (function(theFile) {
+                        return function(e) {
+                          // Insertamos la imagen
+                         document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+                        };
+                    })(f);
+             
+                    reader.readAsDataURL(f);
+                  }
+              }
+             
+             debugger;
+             var el = document.getElementById('files');
+                if(el){
+                  el.addEventListener('change', archivo, false);
+                }
+              
+              
+      </script>
 
-
-        <script type="text/javascript" src="assets/js/vendor.js"></script>
-        <script type="text/javascript" src="assets/js/app.js"></script>
+        
 
     </body>
 </html>
